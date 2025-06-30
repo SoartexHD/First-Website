@@ -149,7 +149,10 @@ hr {
 }
 
 @media screen and (max-width: 390px) {
-
+    nav .nav-items a {
+        display: none;
+        visibility: hidden;
+    }
 
     .about-me {
         display: inline-block;

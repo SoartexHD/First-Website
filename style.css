@@ -127,6 +127,35 @@ hr {
 
 @media screen and (max-width: 576px) {
 
+    .about-me {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 1rem 1rem;
+        margin-top: 100px;
+        align-items: center;
+        max-width: 350px;
+    }
+
+    .about-me .items {
+        border: 2px solid rgb(57, 62, 70);
+        border-radius: 1rem;
+        padding: 2rem;
+        align-items: center;
+    }
+
+    .about-me img {
+        margin-left: auto;
+        width: 300px;
+        border-radius: 1rem;
+    }
+
+    .about-me .items ul {
+        list-style-type: none;
+    }
+
+    /*-----------*/
+
     nav .nav-items a {
         display: none;
         visibility: hidden;

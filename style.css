@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: rgb(238, 238, 238);
+}
+
+body {
+    max-width: 1500px;
+    margin: 0 auto;
+    font-family: "Albert Sans", sans-serif;
+    background-color: rgb(34, 40, 49);
+}
+
+nav h1 {
+    font-size: 2rem;
+    min-width: 200px;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(57, 62, 70);
+    border-radius: 1rem;
+    margin-top: 1rem;
+    padding: 1rem 1rem;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    flex-grow: 1;
+    list-style-type: none;
+}
+
+.nav-items a {
+    text-decoration: none;
+}
+
+ul a:hover {
+    text-decoration: underline;
+    color: rgb(0, 173, 181);
+}
+
+/* START - ABOUT ME  - START*/
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem 1rem;
+    margin-top: 100px;
+    align-items: center;
+    max-width: 1300px;
+
+}
+
+.about-me .items {
+    border: 2px solid rgb(57, 62, 70);
+    border-radius: 1rem;
+    padding: 2rem;
+    align-items: center;
+}
+
+.about-me img {
+    margin-left: auto;
+    width: 300px;
+    border-radius: 1rem;
+}
+
+.about-me .items ul {
+    list-style-type: none;
+}
+
+.about-me .items .title {
+    color: rgb(0, 173, 181);
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.about-me .items .description {
+    padding-left: 20px;
+}
+
+/* END - ABOUT ME  - END*/
+
+hr {
+    margin-top: 5rem;
+}
+
+.skills {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 150px;
+    gap: 30px;
+}
+
+.skills .items {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: rgb(57, 62, 70);
+    border-radius: 1rem;
+}
+
+@media screen and (max-width: 700px) {
+    .about-me {
+        display: inline-block;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .about-me img {
+        padding-top: 2rem;
+        max-width: 300px;
+        width: 100%;
+        border-radius: 1rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+
+    .about-me {
+        display: inline-block;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .about-me img {
+        padding-top: 2rem;
+        max-width: 300px;
+        width: 100%;
+        border-radius: 1rem;
+    }
+}
